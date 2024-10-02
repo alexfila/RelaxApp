@@ -10,10 +10,11 @@ import SwiftUI
 struct Pointer: View {
     @State private var circlescale: CGFloat = 1
     @State private var isOn = true
+    let electricPurple = Color(#colorLiteral(red: 0.8470588235, green: 0.5137254902, blue: 1, alpha: 1))
     var body: some View {
         ZStack {
             Circle()
-                .foregroundColor(.blue)
+                .foregroundStyle(electricPurple.gradient)
                 .opacity(0.5)
                 .frame(width: 20)
                 .scaleEffect(isOn ? 1.5 * circlescale : circlescale)
@@ -22,7 +23,7 @@ struct Pointer: View {
                     isOn.toggle()
                 }
             Circle()
-                .foregroundColor(.blue)
+                .foregroundStyle(electricPurple.gradient)
                 .opacity(0.5)
                 .frame(width: 20)
                 .scaleEffect(isOn ? 1.5 * circlescale : circlescale)
@@ -31,7 +32,7 @@ struct Pointer: View {
                     isOn.toggle()
                 }
             Circle()
-                .foregroundColor(.blue)
+                .foregroundStyle(electricPurple.gradient)
                 .frame(width: 20)
                 .onAppear {
                     isOn.toggle()
