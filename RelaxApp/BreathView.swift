@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  BreathView.swift
 //  RelaxApp
 //
 //  Created by Alex Fila on 02/10/24.
@@ -7,12 +7,10 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct BreathView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
+            Pointer()
             Text("Hello, world!")
         }
         .padding()
@@ -20,5 +18,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    BreathView()
 }
