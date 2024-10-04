@@ -45,7 +45,7 @@ struct BubbleLevel: View {
         Circle()
             .foregroundStyle(Color.secondary.opacity(0.25))
             .frame(width: levelSize, height: levelSize)
-            .overlay(Pointer()
+            .overlay(PointerView()
                         .position(x: bubbleXPosition, y: bubbleYPosition)
             )
         }

@@ -1,5 +1,5 @@
 //
-//  Pointer.swift
+//  PointerView.swift
 //  RelaxApp
 //
 //  Created by Alex Fila on 02/10/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Pointer: View {
+struct PointerView: View {
     @State private var circlescale: CGFloat = 1
     @State private var isOn = true
     let electricPurple = Color(#colorLiteral(red: 0.8470588235, green: 0.5137254902, blue: 1, alpha: 1))
@@ -42,6 +42,6 @@ struct Pointer: View {
 }
 
 #Preview {
-    Pointer()
+    PointerView()
         .preferredColorScheme(.dark)
 }
