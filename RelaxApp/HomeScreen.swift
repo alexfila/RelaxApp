@@ -9,18 +9,25 @@ import SwiftUI
 
 struct HomeScreen: View {
     var body: some View {
-        Grid(alignment: .center, horizontalSpacing: 20, verticalSpacing: 20)
-        {
-            GridRow {
-                Color.brown
-                Color.orange
+        NavigationStack {
+            Grid(alignment: .center, horizontalSpacing: 20, verticalSpacing: 20)
+            {
+                GridRow {
+                    NavigationLink(destination: BreathView()) {
+                        ElementView()
+                    }
+                    Color.orange
+                }
+                GridRow {
+                    Color.blue
+                    Color.mint
+                }
             }
-            GridRow {
-                Color.blue
-                Color.mint
-            }
+            .padding(30)
+            .navigationTitle("Relax App")
+            .navigationBarTitleDisplayMode(.inline)
+            
         }
-        .padding(30)
     }
 }
 
