@@ -38,6 +38,4 @@ var point : [CGSize] = [
     CGSize(width: 170 , height: 170),
     CGSize(width: 170 , height: 170)]
             
-#Preview {
-    BreathView()
-}
+#Preview { BreathView() }

@@ -41,7 +41,4 @@ struct PointerView: View {
     }
 }
 
-#Preview {
-    PointerView()
-        .preferredColorScheme(.dark)
-}
+#Preview { PointerView().preferredColorScheme(.dark) }

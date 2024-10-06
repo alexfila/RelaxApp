@@ -40,9 +40,5 @@ struct ImageOUT: View {
     }
 }
 
-#Preview {
-    ImageIN()
-        .preferredColorScheme(.dark)
-    ImageOUT()
-        .preferredColorScheme(.dark)
-}
+#Preview { ImageIN().preferredColorScheme(.dark)
+    ImageOUT().preferredColorScheme(.dark) }

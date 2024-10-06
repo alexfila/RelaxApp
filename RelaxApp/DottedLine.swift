@@ -23,6 +23,4 @@ struct Line: Shape {
     }
 }
 
-#Preview {
-    ContentView()
-}
+#Preview { ContentView() }
