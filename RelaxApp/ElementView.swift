@@ -8,16 +8,20 @@
 import SwiftUI
 
 struct ElementView: View {
+    @State var color = Color.brown
+    @State var image = Image(systemName: "mountain.2")
+    @State var text = Text("Earth")
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 40.0)
-                .foregroundColor(.brown)
+                .foregroundColor(color)
             VStack {
-                Image(systemName: "mountain.2")
+                image
                     .resizable()
                     .scaledToFit()
                     .foregroundColor(.black)
-                Text("Earth")
+                    .padding()
+                text
                     .font(.largeTitle)
                     .foregroundColor(.black)
             }

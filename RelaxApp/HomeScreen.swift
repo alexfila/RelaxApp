@@ -14,13 +14,19 @@ struct HomeScreen: View {
             {
                 GridRow {
                     NavigationLink(destination: BreathView()) {
-                        ElementView()
+                        element.picker(.earth)
                     }
-                    Color.orange
+                    NavigationLink(destination: BreathView()) {
+                        element.picker(.water)
+                    }
                 }
                 GridRow {
-                    Color.blue
-                    Color.mint
+                    NavigationLink(destination: BreathView()) {
+                        element.picker(.fire)
+                    }
+                    NavigationLink(destination: BreathView()) {
+                        element.picker(.wind)
+                    }
                 }
             }
             .padding(30)
