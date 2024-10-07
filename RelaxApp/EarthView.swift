@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BreathView: View {
+struct EarthView: View {
     let skyBlue = Color(#colorLiteral(red: 0.2901960784, green: 0.8392156863, blue: 1, alpha: 1))
     let electricPurple = Color(#colorLiteral(red: 0.8470588235, green: 0.5137254902, blue: 1, alpha: 1))
     var body: some View {
