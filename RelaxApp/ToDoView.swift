@@ -1,5 +1,5 @@
 //
-//  SwiftUIView.swift
+//  ToDoView.swift
 //  RelaxApp
 //
 //  Created by Alex Fila on 07/10/24.
@@ -7,12 +7,20 @@
 
 import SwiftUI
 
-struct SwiftUIView: View {
+struct ToDoView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("In progress...👨🏻‍💻👩🏻‍💻")
+                .font(.largeTitle)
+            Button("Donate here💰😁") {
+            }
+            .font(.title)
+            .buttonStyle(.borderedProminent)
+        }
+        .padding()
     }
 }
 
 #Preview {
-    SwiftUIView()
+    ToDoView()
 }

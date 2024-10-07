@@ -13,18 +13,18 @@ struct HomeScreen: View {
             Grid(alignment: .center, horizontalSpacing: 20, verticalSpacing: 20)
             {
                 GridRow {
-                    NavigationLink(destination: BreathView()) {
+                    NavigationLink(destination: EarthView()) {
                         element.picker(.earth)
                     }
-                    NavigationLink(destination: BreathView()) {
+                    NavigationLink(destination: ToDoView()) {
                         element.picker(.water)
                     }
                 }
                 GridRow {
-                    NavigationLink(destination: BreathView()) {
+                    NavigationLink(destination: ToDoView()) {
                         element.picker(.fire)
                     }
-                    NavigationLink(destination: BreathView()) {
+                    NavigationLink(destination: ToDoView()) {
                         element.picker(.wind)
                     }
                 }
