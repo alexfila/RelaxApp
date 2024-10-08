@@ -16,7 +16,7 @@ struct PointerView: View {
             Circle()
                 .foregroundStyle(electricPurple.gradient)
                 .opacity(0.5)
-                .frame(width: 20)
+                .frame(width: 40)
                 .scaleEffect(isOn ? 1.5 * circlescale : circlescale)
                 .animation(.easeInOut(duration: 1.5).repeatForever(), value: isOn)
                 .onAppear {
@@ -25,7 +25,7 @@ struct PointerView: View {
             Circle()
                 .foregroundStyle(electricPurple.gradient)
                 .opacity(0.5)
-                .frame(width: 20)
+                .frame(width: 40)
                 .scaleEffect(isOn ? 1.5 * circlescale : circlescale)
                 .animation(.easeInOut(duration: 2).repeatForever(), value: isOn)
                 .onAppear {
@@ -33,7 +33,7 @@ struct PointerView: View {
                 }
             Circle()
                 .foregroundStyle(electricPurple.gradient)
-                .frame(width: 20)
+                .frame(width: 40)
                 .onAppear {
                     isOn.toggle()
                 }
