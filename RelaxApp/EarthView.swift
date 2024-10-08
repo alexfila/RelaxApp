@@ -8,26 +8,15 @@
 import SwiftUI
 
 struct EarthView: View {
-    let skyBlue = Color(#colorLiteral(red: 0.2901960784, green: 0.8392156863, blue: 1, alpha: 1))
-    let electricPurple = Color(#colorLiteral(red: 0.8470588235, green: 0.5137254902, blue: 1, alpha: 1))
+    @State private var isOn = true
+    
     var body: some View {
-        HStack {
-            Button("▶️") {
-            }
-            .font(.title)
-            .buttonStyle(.borderedProminent)
-            ZStack {
-                Image(systemName: "mountain.2")
-                    .resizable()
-                    .padding()
-                    .opacity(0.6)
-                    .offset(x: 85, y: 10)
-                PointerView()
-                    .offset(point[0])
-            }
-            .padding()
+        ZStack {
+            PointerView(color: Color(#colorLiteral(red: 0.5058823824, green: 0.3372549117, blue: 0.06666667014, alpha: 1)))
+            Text("Relax, get ready....")
+                .frame(maxWidth: .infinity,maxHeight: .infinity,alignment: .bottom)
+                .font(.largeTitle)
         }
-        .padding()
     }
 }
 
